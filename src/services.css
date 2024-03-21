@@ -1,0 +1,127 @@
+.service{
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.services{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    gap: 100px;
+}
+.services .box{
+    position: relative;
+    width: 450px;
+    height: 400px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #FFD700;
+    text-align: center;
+}
+
+/* verti */
+.services .box::before{
+    content: '';
+    position: absolute;
+    inset: -10px 50px;
+    border-top: 4px solid #FFD700;
+    border-bottom: 4px solid #FFD700;
+    z-index: -1;
+    transform: skewY(15deg);
+    transition: 0.5s ease-in-out;
+}
+.services .box:hover::before{
+    transform: skewY(0deg);
+    inset: -10px 40px;
+}
+.services .box::after{
+    content: '';
+    position: absolute;
+    inset: -10px 50px;
+    border-left: 4px solid #FFD700;
+    border-right: 4px solid #FFD700;
+    z-index: -1;
+    transform: skewY(15deg);
+    transition: 0.5s ease-in-out;
+}
+.services .box:hover::after{
+    transform: skewY(0deg);
+    inset: -10px 40px;
+}
+/* hori */
+.services .box::before{
+    content: '';
+    position: absolute;
+    inset: -10px 50px;
+    border-top: 4px solid #FFD700;
+    border-bottom: 4px solid #FFD700;
+    z-index: -1;
+    transform: skewY(15deg);
+    transition: 0.5s ease-in-out;
+}
+.services .box:hover::before{
+    transform: skewY(0deg);
+    inset: -10px 40px;
+}
+.services .box::after{
+    content: '';
+    position: absolute;
+    inset: -10px 50px;
+    border-left: 4px solid #FFD700;
+    border-right: 4px solid #FFD700;
+    z-index: -1;
+    transform: skewY(15deg);
+    transition: 0.5s ease-in-out;
+}
+.services .box:hover::after{
+    transform: skewY(0deg);
+    inset: -10px 40px;
+}
+
+.services .box .service-content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.services .box .service-icon{
+    color: #FFD700;
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background: rgba(226, 223, 210, 0.1);
+    transition: 0.5s ease-in-out;
+}
+.services .box .service-content a{
+    background: #FFD700;
+    padding: 10px;
+    border-radius: 3px; 
+    text-decoration: none;
+    color: #000;
+}
+.services .box .service-content a:hover{
+    background: #817201;
+}
+
+.service-text p{
+    font-size: 15px;
+}

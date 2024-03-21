@@ -1,0 +1,130 @@
+ .form-container{
+  background: #000;
+ }
+ .form-container,.testbox-cus, .item, .customize-form, input, textarea, select, p { 
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  line-height: 22px;
+  }
+  .banner-cus h1 {
+  position: absolute;
+  margin: 0;
+  font-size: 32px;
+  color: #fff;
+  z-index: 2;
+  }
+  .testbox-cus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  padding: 60px;
+  }
+  .customize-form {
+  width: 25%;
+  padding: 20px;
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 0 0 10px 0 #FFD700; 
+  }
+  .banner-cus {
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+  input, textarea {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  }
+  input {
+  width: calc(100% - 10px);
+  padding: 5px;
+  border-radius: 50px;
+  background: #000;
+  }
+  textarea {
+  width: calc(100% - 12px);
+  padding: 5px;
+  border-radius: 10px;
+  background: #000;
+  }
+  .select-cus {
+    width: 97%;
+    padding: 7px 0;
+    background: transparent;
+    border-radius: 50px;
+    }
+  .item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+  color: #666;
+  }
+  .item input:hover, .item select:hover, .item textarea:hover {
+  border: 1px solid transparent;
+  box-shadow: 0 0 6px 0 #FFD700;
+  color: #FFD700;
+  }
+  .item {
+  position: relative;
+  margin: 10px 0;
+  }
+  .btn-block {
+  margin-top: 10px;
+  text-align: center;
+  }
+  .btn5 {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px; 
+  background: #FFD700;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  }
+  .btn5:hover {
+  background: #817201;
+  }
+  @media (min-width: 568px) {
+  .name-item, .city-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  .name-item input, .city-item input {
+  width: calc(50% - 20px);
+  }
+  .city-item select {
+  width: calc(50% - 8px);
+  }
+  }
+
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn6 {
+    background-color: #FFD700; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .btn6:hover{
+    background-color: #817201;
+  }
